@@ -13,7 +13,7 @@ export class SpinnerDirective {
   ngOnChanges() {
     if (this.loading) {
       this.render.addClass(this.el.nativeElement, 'disabled');
-      this.el.nativeElement.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> ...Loading`;
+      this.el.nativeElement.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...`;
     } else {
       this.render.removeClass(this.el.nativeElement, 'disabled');
       this.el.nativeElement.innerHTML = `Submit`;
