@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form (ngSubmit)="onSubmit()">
+        <button class="btn btn-primary" type="submit" [appSpinner]="loading">
+         Submit
+        </button>
+      </form>
+    </div>
+    <div class="row mt-3">
+      <div class="col">
+        <form (ngSubmit)="onSubmit2()">
+          <button class="btn btn-primary" type="submit" [appSpinner]="loading2">
+           Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
