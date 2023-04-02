@@ -1,0 +1,7 @@
+<div class="row mt-3">
+    <div class="col d-flex flex-column">
+      <input type="file" accept=".png" class="file-input" (change)="onFileSelected($event)">
+      <img id="imgUrl" style="height: 80px;width: 80px;" [src]="imageUrl" *ngIf="imageUrl">
+      </div>
+      <button (click)="resetFileInput()" *ngIf="imageUrl">delete</button>
+  </div>

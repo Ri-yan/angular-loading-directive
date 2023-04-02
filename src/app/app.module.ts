@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { SpinnerDirective } from './directive/spinner.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImgUploadComponent } from './img-upload/img-upload.component';
 @NgModule({
   declarations: [
     AppComponent,
     SpinnerDirective,
+    ImgUploadComponent,
   ],
   imports: [
     BrowserModule,
